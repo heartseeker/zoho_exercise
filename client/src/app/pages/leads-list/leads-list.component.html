@@ -1,0 +1,22 @@
+<table id="customers" *ngIf="leads">
+  <tr>
+    <th>ID</th>
+    <th>Company</th>
+    <th>Email</th>
+    <th>Website</th>
+    <th>Fullname</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Lead Source</th>
+  </tr>
+  <tr *ngFor="let lead of leads">
+    <td>{{ lead.id }} </td>
+    <td>{{ lead.company }}</td>
+    <td>{{ lead.email }}</td>
+    <td>{{ lead.website }}</td>
+    <td>{{ lead.full_name }}</td>
+    <td>{{ lead.city }}</td>
+    <td>{{ lead.country }}</td>
+    <td>{{ lead.lead_source }}</td>
+  </tr>
+</table>
